@@ -1,5 +1,8 @@
 # Password Manager 
-- Every record in this db is encrypted using master password hence when someone else checks the db they can't view your password. You can only view it if you have the correct master password.
-- Each record can have different master password.
-- Dummy data entered has master password as test@123.
-- You can remove environment variable dependency by hard coding the salt value of your choice.
+- Each entry within this database is protected with encryption, requiring a specific master password for access. This ensures that unauthorized individuals cannot view your stored passwords. Only those with the correct master password can access the content.
+
+- It's important to note that each entry in the database can have its own unique master password, providing added security.
+
+- For testing purposes, we have inserted dummy data into the database with the master password set to "test@123."
+
+- To eliminate the need for environment variables, you have the option to hard-code your preferred salt value.
